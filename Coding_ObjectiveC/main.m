@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Node.h"
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
+		Node *a = [[Node alloc] initWithData:10];
+		Node *b = [[Node alloc] initWithData:20 andNextNode:a];
+		NSLog(@"A:%@", a);
+		NSLog(@"B:%@", b);
 	}
     return 0;
 }

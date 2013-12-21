@@ -13,4 +13,8 @@
 @property (nonatomic, unsafe_unretained) NSInteger data;
 @property (nonatomic, strong) Node *next;
 
+- (id)initWithData:(NSInteger)data andNextNode:(Node *)next;
+- (id)initWithData:(NSInteger)data;
+- (id)initWithNextNode:(Node *)next;
+
 @end
