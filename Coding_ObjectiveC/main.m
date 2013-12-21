@@ -16,6 +16,8 @@ int main(int argc, const char * argv[]) {
 		[list insertNodeWithData:20];
 		Node *otherNode = [[Node alloc] initWithData:30];
 		[list insertNode:otherNode];
+		[list removeNodeWithData:30];
+		[list insertNodeWithData:40];
 		NSLog(@"List:%@", list);
 	}
     return 0;

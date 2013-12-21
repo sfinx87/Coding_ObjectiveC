@@ -34,15 +34,31 @@
 	}
 }
 
-- (void)removeNode:(Node *)node {
-}
-
 - (void)insertNodeWithData:(NSInteger)data {
 	Node *node = [[Node alloc] initWithData:data];
 	[self insertNode:node];
 }
 
+- (void)removeNode:(Node *)node {
+	[self removeNodeWithData:node.data];
+}
+
 - (void)removeNodeWithData:(NSInteger)data {
+	if (data == _head.data) {
+		Node *resultNode = _head;
+		_head =  _head.next;
+		resultNode = nil;
+		return;
+	}
+	Node *node = [self findBeforeNodeWithData:data];
+	if (node) {
+		Node *resultNode = node.next;
+		node.next = node.next.next;
+		if (_tail == resultNode) {
+			_tail = node;
+		}
+		resultNode = nil;
+	}
 }
 
 - (Node *)findNodeWithData:(NSInteger)data {
