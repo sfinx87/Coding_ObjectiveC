@@ -1,5 +1,5 @@
 //
-//  main.m
+//  Node.h
 //  Coding_ObjectiveC
 //
 //  Created by Alexander Kobylinskyy on 12/21/13.
@@ -8,9 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-int main(int argc, const char * argv[]) {
-	@autoreleasepool {
-	}
-    return 0;
-}
+@interface Node : NSObject
 
+@property (nonatomic, unsafe_unretained) NSInteger data;
+@property (nonatomic, strong) Node *next;
+
+@end
