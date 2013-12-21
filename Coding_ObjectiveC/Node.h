@@ -6,15 +6,20 @@
 //  Copyright (c) 2013 Alex. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "NodeProtocol.h"
 
-@interface Node : NSObject
+@interface Node : NSObject <NodeProtocol>
 
 @property (nonatomic, unsafe_unretained) NSInteger data;
 @property (nonatomic, strong) Node *next;
 
-- (id)initWithData:(NSInteger)data andNextNode:(Node *)next;
+- (id)initWithData:(NSInteger)data andNext:(Node *)next;
 - (id)initWithData:(NSInteger)data;
-- (id)initWithNextNode:(Node *)next;
+- (id)initWithNext:(Node *)next;
 
 @end
+
+/*
+Node *a = [[Node alloc] initWithData:10];
+Node *b = [[Node alloc] initWithData:20 andNext:a];
+*/

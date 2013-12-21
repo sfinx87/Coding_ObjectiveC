@@ -11,6 +11,7 @@
 		589A0348186614290093B535 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0347186614290093B535 /* main.m */; };
 		589A034C186614290093B535 /* Coding_ObjectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 589A034B186614290093B535 /* Coding_ObjectiveC.1 */; };
 		589A0354186614620093B535 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0353186614620093B535 /* Node.m */; };
+		589A035818661D9F0093B535 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A035718661D9F0093B535 /* List.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +35,10 @@
 		589A034B186614290093B535 /* Coding_ObjectiveC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Coding_ObjectiveC.1; sourceTree = "<group>"; };
 		589A0352186614620093B535 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		589A0353186614620093B535 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
+		589A035618661D9F0093B535 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
+		589A035718661D9F0093B535 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		589A035B18661E7A0093B535 /* NodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeProtocol.h; sourceTree = "<group>"; };
+		589A035C18661F0F0093B535 /* ListProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListProtocol.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +84,7 @@
 				589A0347186614290093B535 /* main.m */,
 				589A034B186614290093B535 /* Coding_ObjectiveC.1 */,
 				589A0355186614670093B535 /* Classes */,
+				589A035918661E100093B535 /* Protocols */,
 				589A0349186614290093B535 /* Supporting Files */,
 			);
 			path = Coding_ObjectiveC;
@@ -97,8 +103,19 @@
 			children = (
 				589A0352186614620093B535 /* Node.h */,
 				589A0353186614620093B535 /* Node.m */,
+				589A035618661D9F0093B535 /* List.h */,
+				589A035718661D9F0093B535 /* List.m */,
 			);
 			name = Classes;
+			sourceTree = "<group>";
+		};
+		589A035918661E100093B535 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				589A035B18661E7A0093B535 /* NodeProtocol.h */,
+				589A035C18661F0F0093B535 /* ListProtocol.h */,
+			);
+			name = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +169,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				589A035818661D9F0093B535 /* List.m in Sources */,
 				589A0348186614290093B535 /* main.m in Sources */,
 				589A0354186614620093B535 /* Node.m in Sources */,
 			);

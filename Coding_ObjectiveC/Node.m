@@ -12,7 +12,7 @@
 
 #pragma mark - Initialization
 
-- (id)initWithData:(NSInteger)data andNextNode:(Node *)next {
+- (id)initWithData:(NSInteger)data andNext:(Node *)next {
 	self = [super init];
 	if (self) {
 		_data = data;
@@ -22,14 +22,14 @@
 }
 
 - (id)initWithData:(NSInteger)data {
-	self = [self initWithData:data andNextNode:nil];
+	self = [self initWithData:data andNext:nil];
 	if (self) {
 	}
 	return self;
 }
 
-- (id)initWithNextNode:(Node *)next {
-	self = [self initWithData:0 andNextNode:next];
+- (id)initWithNext:(Node *)next {
+	self = [self initWithData:0 andNext:next];
 	if (self) {
 	}
 	return self;

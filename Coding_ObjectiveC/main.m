@@ -6,15 +6,17 @@
 //  Copyright (c) 2013 Alex. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import "List.h"
 #import "Node.h"
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
-		Node *a = [[Node alloc] initWithData:10];
-		Node *b = [[Node alloc] initWithData:20 andNextNode:a];
-		NSLog(@"A:%@", a);
-		NSLog(@"B:%@", b);
+		Node *head = [[Node alloc] initWithData:10];
+		List *list = [[List alloc] initWithHead:head];
+		[list insertNodeWithData:20];
+		Node *otherNode = [[Node alloc] initWithData:30];
+		[list insertNode:otherNode];
+		NSLog(@"List:%@", list);
 	}
     return 0;
 }
