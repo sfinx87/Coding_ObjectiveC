@@ -18,8 +18,3 @@
 - (id)initWithNext:(Node *)next;
 
 @end
-
-/*
-Node *a = [[Node alloc] initWithData:10];
-Node *b = [[Node alloc] initWithData:20 andNext:a];
-*/

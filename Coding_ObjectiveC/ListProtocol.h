@@ -14,6 +14,7 @@
 @property (nonatomic, strong) Node *head;
 @property (nonatomic, strong) Node *tail;
 
+- (BOOL)isEmpty;
 - (void)insertNode:(Node *)node;
 - (void)removeNode:(Node *)node;
 - (void)insertNodeWithData:(NSInteger)data;

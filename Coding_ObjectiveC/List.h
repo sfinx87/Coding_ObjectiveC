@@ -16,6 +16,7 @@
 
 - (id)initWithHead:(Node *)head;
 
+- (BOOL)isEmpty;
 - (void)insertNode:(Node *)node;
 - (void)removeNode:(Node *)node;
 - (void)insertNodeWithData:(NSInteger)data;

@@ -23,6 +23,10 @@
 
 #pragma mark - ListProtocol
 
+- (BOOL)isEmpty {
+	return (_head == nil);
+}
+
 - (void)insertNode:(Node *)node {
 	if (!_head) {
 		_head = node;

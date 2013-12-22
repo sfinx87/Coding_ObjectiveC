@@ -12,7 +12,22 @@
 		589A034C186614290093B535 /* Coding_ObjectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 589A034B186614290093B535 /* Coding_ObjectiveC.1 */; };
 		589A0354186614620093B535 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0353186614620093B535 /* Node.m */; };
 		589A035818661D9F0093B535 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A035718661D9F0093B535 /* List.m */; };
+		589A037D1867718B0093B535 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589A036218676BA70093B535 /* XCTest.framework */; };
+		589A03831867718B0093B535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589A03811867718B0093B535 /* InfoPlist.strings */; };
+		589A038C186771930093B535 /* Node_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A037518676BF60093B535 /* Node_Tests.m */; };
+		589A038D186771A20093B535 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0353186614620093B535 /* Node.m */; };
+		589A0390186772240093B535 /* Coding_ObjectiveC_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		589A03871867718B0093B535 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 589A0339186614280093B535 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 589A0340186614280093B535;
+			remoteInfo = Coding_ObjectiveC;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		589A033F186614280093B535 /* CopyFiles */ = {
@@ -39,6 +54,18 @@
 		589A035718661D9F0093B535 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
 		589A035B18661E7A0093B535 /* NodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeProtocol.h; sourceTree = "<group>"; };
 		589A035C18661F0F0093B535 /* ListProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListProtocol.h; sourceTree = "<group>"; };
+		589A036218676BA70093B535 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		589A036518676BA70093B535 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		589A036918676BA70093B535 /* Coding_ObjectiveC Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coding_ObjectiveC Tests-Info.plist"; sourceTree = "<group>"; };
+		589A036B18676BA70093B535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		589A036F18676BA70093B535 /* Coding_ObjectiveC Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coding_ObjectiveC Tests-Prefix.pch"; sourceTree = "<group>"; };
+		589A037518676BF60093B535 /* Node_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node_Tests.m; sourceTree = "<group>"; };
+		589A037C1867718B0093B535 /* Coding_ObjectiveC Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coding_ObjectiveC Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		589A03801867718B0093B535 /* Coding_ObjectiveC Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coding_ObjectiveC Tests-Info.plist"; sourceTree = "<group>"; };
+		589A03821867718B0093B535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		589A03841867718B0093B535 /* Coding_ObjectiveC_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coding_ObjectiveC_Tests.m; sourceTree = "<group>"; };
+		589A03861867718B0093B535 /* Coding_ObjectiveC Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coding_ObjectiveC Tests-Prefix.pch"; sourceTree = "<group>"; };
+		589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coding_ObjectiveC_Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -50,6 +77,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		589A03791867718B0093B535 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589A037D1867718B0093B535 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -57,6 +92,8 @@
 			isa = PBXGroup;
 			children = (
 				589A0346186614290093B535 /* Coding_ObjectiveC */,
+				589A036718676BA70093B535 /* Coding_ObjectiveC Tests */,
+				589A037E1867718B0093B535 /* Coding_ObjectiveC Tests */,
 				589A0343186614280093B535 /* Frameworks */,
 				589A0342186614280093B535 /* Products */,
 			);
@@ -66,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				589A0341186614280093B535 /* Coding_ObjectiveC */,
+				589A037C1867718B0093B535 /* Coding_ObjectiveC Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -74,6 +112,8 @@
 			isa = PBXGroup;
 			children = (
 				589A0344186614280093B535 /* Foundation.framework */,
+				589A036218676BA70093B535 /* XCTest.framework */,
+				589A036518676BA70093B535 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -118,6 +158,45 @@
 			name = Protocols;
 			sourceTree = "<group>";
 		};
+		589A036718676BA70093B535 /* Coding_ObjectiveC Tests */ = {
+			isa = PBXGroup;
+			children = (
+				589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */,
+				589A037518676BF60093B535 /* Node_Tests.m */,
+				589A036818676BA70093B535 /* Supporting Files */,
+			);
+			path = "Coding_ObjectiveC Tests";
+			sourceTree = "<group>";
+		};
+		589A036818676BA70093B535 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				589A036918676BA70093B535 /* Coding_ObjectiveC Tests-Info.plist */,
+				589A036A18676BA70093B535 /* InfoPlist.strings */,
+				589A036F18676BA70093B535 /* Coding_ObjectiveC Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		589A037E1867718B0093B535 /* Coding_ObjectiveC Tests */ = {
+			isa = PBXGroup;
+			children = (
+				589A03841867718B0093B535 /* Coding_ObjectiveC_Tests.m */,
+				589A037F1867718B0093B535 /* Supporting Files */,
+			);
+			path = "Coding_ObjectiveC Tests";
+			sourceTree = "<group>";
+		};
+		589A037F1867718B0093B535 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				589A03801867718B0093B535 /* Coding_ObjectiveC Tests-Info.plist */,
+				589A03811867718B0093B535 /* InfoPlist.strings */,
+				589A03861867718B0093B535 /* Coding_ObjectiveC Tests-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +217,24 @@
 			productReference = 589A0341186614280093B535 /* Coding_ObjectiveC */;
 			productType = "com.apple.product-type.tool";
 		};
+		589A037B1867718B0093B535 /* Coding_ObjectiveC Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 589A03891867718B0093B535 /* Build configuration list for PBXNativeTarget "Coding_ObjectiveC Tests" */;
+			buildPhases = (
+				589A03781867718B0093B535 /* Sources */,
+				589A03791867718B0093B535 /* Frameworks */,
+				589A037A1867718B0093B535 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				589A03881867718B0093B535 /* PBXTargetDependency */,
+			);
+			name = "Coding_ObjectiveC Tests";
+			productName = "Coding_ObjectiveC Tests";
+			productReference = 589A037C1867718B0093B535 /* Coding_ObjectiveC Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -146,6 +243,11 @@
 			attributes = {
 				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = Alex;
+				TargetAttributes = {
+					589A037B1867718B0093B535 = {
+						TestTargetID = 589A0340186614280093B535;
+					};
+				};
 			};
 			buildConfigurationList = 589A033C186614280093B535 /* Build configuration list for PBXProject "Coding_ObjectiveC" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -160,9 +262,21 @@
 			projectRoot = "";
 			targets = (
 				589A0340186614280093B535 /* Coding_ObjectiveC */,
+				589A037B1867718B0093B535 /* Coding_ObjectiveC Tests */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		589A037A1867718B0093B535 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589A03831867718B0093B535 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		589A033D186614280093B535 /* Sources */ = {
@@ -175,7 +289,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		589A03781867718B0093B535 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				589A0390186772240093B535 /* Coding_ObjectiveC_Tests.m in Sources */,
+				589A038C186771930093B535 /* Node_Tests.m in Sources */,
+				589A038D186771A20093B535 /* Node.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		589A03881867718B0093B535 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 589A0340186614280093B535 /* Coding_ObjectiveC */;
+			targetProxy = 589A03871867718B0093B535 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		589A036A18676BA70093B535 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589A036B18676BA70093B535 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		589A03811867718B0093B535 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				589A03821867718B0093B535 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		589A034D186614290093B535 /* Debug */ = {
@@ -264,6 +415,40 @@
 			};
 			name = Release;
 		};
+		589A038A1867718B0093B535 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		589A038B1867718B0093B535 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Prefix.pch";
+				INFOPLIST_FILE = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -281,6 +466,14 @@
 			buildConfigurations = (
 				589A0350186614290093B535 /* Debug */,
 				589A0351186614290093B535 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		589A03891867718B0093B535 /* Build configuration list for PBXNativeTarget "Coding_ObjectiveC Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				589A038A1867718B0093B535 /* Debug */,
+				589A038B1867718B0093B535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
