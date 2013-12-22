@@ -9,7 +9,7 @@
 @class List;
 @class Node;
 
-@protocol ListProtocol <NSObject>
+@protocol LinkedListProtocol <NSObject>
 
 @property (nonatomic, strong) Node *head;
 @property (nonatomic, strong) Node *tail;

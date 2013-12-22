@@ -9,7 +9,7 @@
 #import "ListProtocol.h"
 @class Node;
 
-@interface List : NSObject <ListProtocol>
+@interface List : NSObject <LinkedListProtocol>
 
 @property (nonatomic, strong) Node *head;
 @property (nonatomic, strong) Node *tail;
