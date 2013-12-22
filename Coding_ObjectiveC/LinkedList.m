@@ -51,6 +51,9 @@
 	if (data == _head.data) {
 		Node *resultNode = _head;
 		_head =  _head.next;
+		if (resultNode == _tail) {
+			_tail = nil;
+		}
 		resultNode = nil;
 		return;
 	}
