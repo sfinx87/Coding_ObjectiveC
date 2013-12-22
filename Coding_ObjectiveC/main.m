@@ -6,13 +6,13 @@
 //  Copyright (c) 2013 Alex. All rights reserved.
 //
 
-#import "List.h"
+#import "LinkedList.h"
 #import "Node.h"
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
 		Node *head = [[Node alloc] initWithData:10];
-		List *list = [[List alloc] initWithHead:head];
+		LinkedList *list = [[LinkedList alloc] initWithHead:head];
 		[list insertNodeWithData:20];
 		Node *otherNode = [[Node alloc] initWithData:30];
 		[list insertNode:otherNode];

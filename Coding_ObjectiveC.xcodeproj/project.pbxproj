@@ -11,12 +11,13 @@
 		589A0348186614290093B535 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0347186614290093B535 /* main.m */; };
 		589A034C186614290093B535 /* Coding_ObjectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 589A034B186614290093B535 /* Coding_ObjectiveC.1 */; };
 		589A0354186614620093B535 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0353186614620093B535 /* Node.m */; };
-		589A035818661D9F0093B535 /* List.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A035718661D9F0093B535 /* List.m */; };
+		589A035818661D9F0093B535 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A035718661D9F0093B535 /* LinkedList.m */; };
 		589A037D1867718B0093B535 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589A036218676BA70093B535 /* XCTest.framework */; };
 		589A03831867718B0093B535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589A03811867718B0093B535 /* InfoPlist.strings */; };
 		589A038C186771930093B535 /* Node_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A037518676BF60093B535 /* Node_Tests.m */; };
 		589A038D186771A20093B535 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0353186614620093B535 /* Node.m */; };
 		589A0390186772240093B535 /* Coding_ObjectiveC_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */; };
+		589A0392186776D60093B535 /* LinkedList_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0391186776D60093B535 /* LinkedList_Tests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,10 +51,10 @@
 		589A034B186614290093B535 /* Coding_ObjectiveC.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = Coding_ObjectiveC.1; sourceTree = "<group>"; };
 		589A0352186614620093B535 /* Node.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Node.h; sourceTree = "<group>"; };
 		589A0353186614620093B535 /* Node.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node.m; sourceTree = "<group>"; };
-		589A035618661D9F0093B535 /* List.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = List.h; sourceTree = "<group>"; };
-		589A035718661D9F0093B535 /* List.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = List.m; sourceTree = "<group>"; };
+		589A035618661D9F0093B535 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
+		589A035718661D9F0093B535 /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
 		589A035B18661E7A0093B535 /* NodeProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NodeProtocol.h; sourceTree = "<group>"; };
-		589A035C18661F0F0093B535 /* ListProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ListProtocol.h; sourceTree = "<group>"; };
+		589A035C18661F0F0093B535 /* LinkedListProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListProtocol.h; sourceTree = "<group>"; };
 		589A036218676BA70093B535 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		589A036518676BA70093B535 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		589A036918676BA70093B535 /* Coding_ObjectiveC Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coding_ObjectiveC Tests-Info.plist"; sourceTree = "<group>"; };
@@ -66,6 +67,7 @@
 		589A03841867718B0093B535 /* Coding_ObjectiveC_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coding_ObjectiveC_Tests.m; sourceTree = "<group>"; };
 		589A03861867718B0093B535 /* Coding_ObjectiveC Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coding_ObjectiveC Tests-Prefix.pch"; sourceTree = "<group>"; };
 		589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coding_ObjectiveC_Tests.m; sourceTree = "<group>"; };
+		589A0391186776D60093B535 /* LinkedList_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList_Tests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -143,8 +145,8 @@
 			children = (
 				589A0352186614620093B535 /* Node.h */,
 				589A0353186614620093B535 /* Node.m */,
-				589A035618661D9F0093B535 /* List.h */,
-				589A035718661D9F0093B535 /* List.m */,
+				589A035618661D9F0093B535 /* LinkedList.h */,
+				589A035718661D9F0093B535 /* LinkedList.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -153,7 +155,7 @@
 			isa = PBXGroup;
 			children = (
 				589A035B18661E7A0093B535 /* NodeProtocol.h */,
-				589A035C18661F0F0093B535 /* ListProtocol.h */,
+				589A035C18661F0F0093B535 /* LinkedListProtocol.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -163,6 +165,7 @@
 			children = (
 				589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */,
 				589A037518676BF60093B535 /* Node_Tests.m */,
+				589A0391186776D60093B535 /* LinkedList_Tests.m */,
 				589A036818676BA70093B535 /* Supporting Files */,
 			);
 			path = "Coding_ObjectiveC Tests";
@@ -283,7 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589A035818661D9F0093B535 /* List.m in Sources */,
+				589A035818661D9F0093B535 /* LinkedList.m in Sources */,
 				589A0348186614290093B535 /* main.m in Sources */,
 				589A0354186614620093B535 /* Node.m in Sources */,
 			);
@@ -295,6 +298,7 @@
 			files = (
 				589A0390186772240093B535 /* Coding_ObjectiveC_Tests.m in Sources */,
 				589A038C186771930093B535 /* Node_Tests.m in Sources */,
+				589A0392186776D60093B535 /* LinkedList_Tests.m in Sources */,
 				589A038D186771A20093B535 /* Node.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
