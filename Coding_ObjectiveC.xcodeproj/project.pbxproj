@@ -18,6 +18,7 @@
 		589A038D186771A20093B535 /* Node.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0353186614620093B535 /* Node.m */; };
 		589A0390186772240093B535 /* Coding_ObjectiveC_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */; };
 		589A0392186776D60093B535 /* LinkedList_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0391186776D60093B535 /* LinkedList_Tests.m */; };
+		589A03931867779C0093B535 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A035718661D9F0093B535 /* LinkedList.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -299,6 +300,7 @@
 				589A0390186772240093B535 /* Coding_ObjectiveC_Tests.m in Sources */,
 				589A038C186771930093B535 /* Node_Tests.m in Sources */,
 				589A0392186776D60093B535 /* LinkedList_Tests.m in Sources */,
+				589A03931867779C0093B535 /* LinkedList.m in Sources */,
 				589A038D186771A20093B535 /* Node.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
