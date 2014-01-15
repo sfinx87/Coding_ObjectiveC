@@ -15,6 +15,7 @@
 @property (nonatomic, strong) Node *tail;
 
 - (void)insertNode:(Node *)node;
+- (void)removeNodeWithData:(NSInteger)data;
 - (Node *)findNodeWithData:(NSInteger)data;
 - (Node *)findBeforeNodeWithData:(NSInteger)data;
 
