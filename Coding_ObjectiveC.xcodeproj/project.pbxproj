@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		587021F018755DAC001D5FBE /* CircularLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 587021EF18755DAC001D5FBE /* CircularLinkedList.m */; };
 		589A0345186614290093B535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589A0344186614280093B535 /* Foundation.framework */; };
 		589A0348186614290093B535 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0347186614290093B535 /* main.m */; };
 		589A034C186614290093B535 /* Coding_ObjectiveC.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 589A034B186614290093B535 /* Coding_ObjectiveC.1 */; };
@@ -45,6 +46,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		587021EE18755DAC001D5FBE /* CircularLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularLinkedList.h; sourceTree = "<group>"; };
+		587021EF18755DAC001D5FBE /* CircularLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularLinkedList.m; sourceTree = "<group>"; };
 		589A0341186614280093B535 /* Coding_ObjectiveC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Coding_ObjectiveC; sourceTree = BUILT_PRODUCTS_DIR; };
 		589A0344186614280093B535 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		589A0347186614290093B535 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -148,6 +151,8 @@
 				589A0353186614620093B535 /* Node.m */,
 				589A035618661D9F0093B535 /* LinkedList.h */,
 				589A035718661D9F0093B535 /* LinkedList.m */,
+				587021EE18755DAC001D5FBE /* CircularLinkedList.h */,
+				587021EF18755DAC001D5FBE /* CircularLinkedList.m */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -290,6 +295,7 @@
 				589A035818661D9F0093B535 /* LinkedList.m in Sources */,
 				589A0348186614290093B535 /* main.m in Sources */,
 				589A0354186614620093B535 /* Node.m in Sources */,
+				587021F018755DAC001D5FBE /* CircularLinkedList.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +480,7 @@
 				589A0351186614290093B535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		589A03891867718B0093B535 /* Build configuration list for PBXNativeTarget "Coding_ObjectiveC Tests" */ = {
 			isa = XCConfigurationList;
@@ -482,6 +489,7 @@
 				589A038B1867718B0093B535 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
