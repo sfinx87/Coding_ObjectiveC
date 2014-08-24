@@ -1,13 +1,18 @@
 //
-//  main.m
+//  main.swift
 //  Coding_ObjectiveC
 //
 //  Created by Alexander Kobylinskyy on 12/21/13.
 //  Copyright (c) 2013 Alex. All rights reserved.
 //
 
-#import "LinkedList.h"
-#import "Node.h"
+var first: Node<Int> = Node<Int>(data: 1)
+var second: Node<Int> = Node<Int>(data: 2, nextNode: first)
+var third: Node<Int> = Node<Int>(data: 3, nextNode: second)
+println(first)
+println(third)
+
+/*#import "LinkedList.h"
 
 int main(int argc, const char * argv[]) {
 	@autoreleasepool {
@@ -21,5 +26,5 @@ int main(int argc, const char * argv[]) {
 		NSLog(@"List:%@", list);
 	}
     return 0;
-}
+}*/
 

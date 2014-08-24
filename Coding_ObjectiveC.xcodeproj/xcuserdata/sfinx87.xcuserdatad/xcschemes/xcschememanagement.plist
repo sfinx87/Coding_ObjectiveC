@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>Coding_ObjectiveC Tests.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 		<key>Coding_ObjectiveC.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
@@ -13,6 +18,16 @@
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>589A0340186614280093B535</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>589A036018676BA60093B535</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>589A037B1867718B0093B535</key>
 		<dict>
 			<key>primary</key>
 			<true/>
