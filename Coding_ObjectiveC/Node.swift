@@ -8,17 +8,21 @@
 
 import Foundation
 
-class Node<T>: Printable {
-	typealias Element = T
+class Node<T: Equatable>: Printable, Equatable {
+	typealias Element = Int
 	var data: T!
-	var nextNode: Node<T>? = nil
+	var next: Node<T>? = nil
 	
-	init(data: T, nextNode: Node<T>? = nil) {
+	init(data: T, next: Node<T>? = nil) {
 		self.data = data
-		self.nextNode = nextNode
+		self.next = next
 	}
 	
 	var description: String {
-		return "Node:\(data) next:\(nextNode)"
+		return "Node:\(data) next:\(next)"
 	}
+}
+
+func == <T>(lhs: Node<T>, rhs: Node<T>) -> Bool {
+	return lhs.data == rhs.data
 }

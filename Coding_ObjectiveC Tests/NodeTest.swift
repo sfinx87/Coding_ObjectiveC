@@ -23,7 +23,7 @@ class NodeTest: XCTestCase {
 		XCTAssertNotNil(node, "Object Node should be created")
 		XCTAssertTrue(node.data == 10, "Node's data should be set")
 		XCTAssertFalse(node.data == 20, "Node's data should be correct")
-		XCTAssertNil(node.nextNode, "Node's next shoud not be set")
+		XCTAssertNil(node.next, "Node's next shoud not be set")
 	}
 	
 	func testNodeData() {
@@ -35,12 +35,12 @@ class NodeTest: XCTestCase {
 	
 	func testNodeNext() {
 		let node1 = Node(data:10)
-		let node2 = Node(data:20, nextNode:node1)
+		let node2 = Node(data:20, next:node1)
 		XCTAssertNotNil(node1, "Object Node should be created")
 		XCTAssertNotNil(node2, "Object Node should be created")
-		XCTAssertNotNil(node2.nextNode, "Node's next should be set")
-		// XCTAssertEqualObject(node2.nextNode, node1, "Node's next should be correct")
-		XCTAssertNil(node1.nextNode, "Node's next should not be set")
+		XCTAssertNotNil(node2.next, "Node's next should be set")
+		XCTAssertEqual(node2.next!, node1, "Node's next should be correct")
+		XCTAssertNil(node1.next, "Node's next should not be set")
 		XCTAssertTrue(node1.data == 10, "Node's data should be set")
 		XCTAssertTrue(node2.data == 20, "Node's data should be set")
 	}
