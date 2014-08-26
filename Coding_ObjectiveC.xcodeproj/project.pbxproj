@@ -7,16 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		58882DE819ACCA3F00AA66F1 /* NodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58882DE719ACCA3F00AA66F1 /* NodeTest.swift */; };
+		58882DE919ACD04F00AA66F1 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A922DF19AA6E07001161F2 /* Node.swift */; };
 		589A0345186614290093B535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589A0344186614280093B535 /* Foundation.framework */; };
 		589A0348186614290093B535 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A0347186614290093B535 /* main.swift */; };
 		589A037D1867718B0093B535 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589A036218676BA70093B535 /* XCTest.framework */; };
 		589A03831867718B0093B535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589A03811867718B0093B535 /* InfoPlist.strings */; };
-		589A038C186771930093B535 /* Node_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A037518676BF60093B535 /* Node_Tests.m */; };
-		589A0390186772240093B535 /* Coding_ObjectiveC_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */; };
-		589A0392186776D60093B535 /* LinkedList_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A0391186776D60093B535 /* LinkedList_Tests.m */; };
-		589A03931867779C0093B535 /* LinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 589A035718661D9F0093B535 /* LinkedList.m */; };
-		58A5CB2B18871D0D00113846 /* CircularLinkedList_Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58A5CB2A18871D0D00113846 /* CircularLinkedList_Tests.m */; };
-		58A5CB2C18871D9A00113846 /* CircularLinkedList.m in Sources */ = {isa = PBXBuildFile; fileRef = 587021EF18755DAC001D5FBE /* CircularLinkedList.m */; };
 		58A922E019AA6E07001161F2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A922DF19AA6E07001161F2 /* Node.swift */; };
 /* End PBXBuildFile section */
 
@@ -45,6 +41,8 @@
 /* Begin PBXFileReference section */
 		587021EE18755DAC001D5FBE /* CircularLinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CircularLinkedList.h; sourceTree = "<group>"; };
 		587021EF18755DAC001D5FBE /* CircularLinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularLinkedList.m; sourceTree = "<group>"; };
+		58882DE619ACCA3D00AA66F1 /* Coding_ObjectiveC Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coding_ObjectiveC Tests-Bridging-Header.h"; sourceTree = "<group>"; };
+		58882DE719ACCA3F00AA66F1 /* NodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTest.swift; sourceTree = "<group>"; };
 		589A0341186614280093B535 /* Coding_ObjectiveC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Coding_ObjectiveC; sourceTree = BUILT_PRODUCTS_DIR; };
 		589A0344186614280093B535 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		589A0347186614290093B535 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
@@ -57,7 +55,6 @@
 		589A036918676BA70093B535 /* Coding_ObjectiveC Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coding_ObjectiveC Tests-Info.plist"; sourceTree = "<group>"; };
 		589A036B18676BA70093B535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		589A036F18676BA70093B535 /* Coding_ObjectiveC Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coding_ObjectiveC Tests-Prefix.pch"; sourceTree = "<group>"; };
-		589A037518676BF60093B535 /* Node_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Node_Tests.m; sourceTree = "<group>"; };
 		589A037C1867718B0093B535 /* Coding_ObjectiveC Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Coding_ObjectiveC Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		589A03801867718B0093B535 /* Coding_ObjectiveC Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coding_ObjectiveC Tests-Info.plist"; sourceTree = "<group>"; };
 		589A03821867718B0093B535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -162,8 +159,8 @@
 		589A036718676BA70093B535 /* Coding_ObjectiveC Tests */ = {
 			isa = PBXGroup;
 			children = (
+				58882DE719ACCA3F00AA66F1 /* NodeTest.swift */,
 				589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */,
-				589A037518676BF60093B535 /* Node_Tests.m */,
 				589A0391186776D60093B535 /* LinkedList_Tests.m */,
 				58A5CB2A18871D0D00113846 /* CircularLinkedList_Tests.m */,
 				589A036818676BA70093B535 /* Supporting Files */,
@@ -178,6 +175,7 @@
 				589A036A18676BA70093B535 /* InfoPlist.strings */,
 				589A036F18676BA70093B535 /* Coding_ObjectiveC Tests-Prefix.pch */,
 				58A922DE19AA6E06001161F2 /* Coding_ObjectiveC-Bridging-Header.h */,
+				58882DE619ACCA3D00AA66F1 /* Coding_ObjectiveC Tests-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -296,12 +294,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589A0390186772240093B535 /* Coding_ObjectiveC_Tests.m in Sources */,
-				58A5CB2C18871D9A00113846 /* CircularLinkedList.m in Sources */,
-				589A038C186771930093B535 /* Node_Tests.m in Sources */,
-				589A0392186776D60093B535 /* LinkedList_Tests.m in Sources */,
-				58A5CB2B18871D0D00113846 /* CircularLinkedList_Tests.m in Sources */,
-				589A03931867779C0093B535 /* LinkedList.m in Sources */,
+				58882DE919ACD04F00AA66F1 /* Node.swift in Sources */,
+				58882DE819ACCA3F00AA66F1 /* NodeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,6 +425,7 @@
 		589A038A1867718B0093B535 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -443,7 +438,10 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Debug;
@@ -451,6 +449,7 @@
 		589A038B1867718B0093B535 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				COMBINE_HIDPI_IMAGES = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(DEVELOPER_FRAMEWORKS_DIR)",
@@ -459,7 +458,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Prefix.pch";
 				INFOPLIST_FILE = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Bridging-Header.h";
 				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
