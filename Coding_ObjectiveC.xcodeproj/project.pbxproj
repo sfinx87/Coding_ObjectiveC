@@ -14,6 +14,7 @@
 		589A037D1867718B0093B535 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589A036218676BA70093B535 /* XCTest.framework */; };
 		589A03831867718B0093B535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589A03811867718B0093B535 /* InfoPlist.strings */; };
 		58A922E019AA6E07001161F2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A922DF19AA6E07001161F2 /* Node.swift */; };
+		58A9AE6519B11359007D4E3A /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A9AE6419B11359007D4E3A /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,9 +48,6 @@
 		589A0344186614280093B535 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		589A0347186614290093B535 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		589A034A186614290093B535 /* Coding_ObjectiveC-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coding_ObjectiveC-Prefix.pch"; sourceTree = "<group>"; };
-		589A035618661D9F0093B535 /* LinkedList.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LinkedList.h; sourceTree = "<group>"; };
-		589A035718661D9F0093B535 /* LinkedList.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList.m; sourceTree = "<group>"; };
-		589A035C18661F0F0093B535 /* LinkedListProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LinkedListProtocol.h; sourceTree = "<group>"; };
 		589A036218676BA70093B535 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		589A036518676BA70093B535 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
 		589A036918676BA70093B535 /* Coding_ObjectiveC Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Coding_ObjectiveC Tests-Info.plist"; sourceTree = "<group>"; };
@@ -65,6 +63,7 @@
 		58A5CB2A18871D0D00113846 /* CircularLinkedList_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularLinkedList_Tests.m; sourceTree = "<group>"; };
 		58A922DE19AA6E06001161F2 /* Coding_ObjectiveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Coding_ObjectiveC-Bridging-Header.h"; path = "../Coding_ObjectiveC/Coding_ObjectiveC-Bridging-Header.h"; sourceTree = "<group>"; };
 		58A922DF19AA6E07001161F2 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
+		58A9AE6419B11359007D4E3A /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,11 +138,10 @@
 		589A0355186614670093B535 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				589A035618661D9F0093B535 /* LinkedList.h */,
-				589A035718661D9F0093B535 /* LinkedList.m */,
 				587021EE18755DAC001D5FBE /* CircularLinkedList.h */,
 				587021EF18755DAC001D5FBE /* CircularLinkedList.m */,
 				58A922DF19AA6E07001161F2 /* Node.swift */,
+				58A9AE6419B11359007D4E3A /* LinkedList.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -151,7 +149,6 @@
 		589A035918661E100093B535 /* Protocols */ = {
 			isa = PBXGroup;
 			children = (
-				589A035C18661F0F0093B535 /* LinkedListProtocol.h */,
 			);
 			name = Protocols;
 			sourceTree = "<group>";
@@ -285,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58A9AE6519B11359007D4E3A /* LinkedList.swift in Sources */,
 				58A922E019AA6E07001161F2 /* Node.swift in Sources */,
 				589A0348186614290093B535 /* main.swift in Sources */,
 			);

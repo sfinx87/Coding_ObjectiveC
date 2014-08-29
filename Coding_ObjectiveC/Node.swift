@@ -6,10 +6,7 @@
 //  Copyright (c) 2014 Alex. All rights reserved.
 //
 
-import Foundation
-
 class Node<T: Equatable>: Printable, Equatable {
-	typealias Element = Int
 	var data: T!
 	var next: Node<T>? = nil
 	
