@@ -15,6 +15,8 @@
 		589A03831867718B0093B535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589A03811867718B0093B535 /* InfoPlist.strings */; };
 		58A922E019AA6E07001161F2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A922DF19AA6E07001161F2 /* Node.swift */; };
 		58A9AE6519B11359007D4E3A /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A9AE6419B11359007D4E3A /* LinkedList.swift */; };
+		58A9AE6719B11F92007D4E3A /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A9AE6619B11F92007D4E3A /* LinkedListTest.swift */; };
+		58A9AE6819B11FFA007D4E3A /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A9AE6419B11359007D4E3A /* LinkedList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,12 +60,11 @@
 		589A03821867718B0093B535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		589A03841867718B0093B535 /* Coding_ObjectiveC_Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Coding_ObjectiveC_Tests.m; sourceTree = "<group>"; };
 		589A03861867718B0093B535 /* Coding_ObjectiveC Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Coding_ObjectiveC Tests-Prefix.pch"; sourceTree = "<group>"; };
-		589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Coding_ObjectiveC_Tests.m; sourceTree = "<group>"; };
-		589A0391186776D60093B535 /* LinkedList_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LinkedList_Tests.m; sourceTree = "<group>"; };
 		58A5CB2A18871D0D00113846 /* CircularLinkedList_Tests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CircularLinkedList_Tests.m; sourceTree = "<group>"; };
 		58A922DE19AA6E06001161F2 /* Coding_ObjectiveC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "Coding_ObjectiveC-Bridging-Header.h"; path = "../Coding_ObjectiveC/Coding_ObjectiveC-Bridging-Header.h"; sourceTree = "<group>"; };
 		58A922DF19AA6E07001161F2 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		58A9AE6419B11359007D4E3A /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
+		58A9AE6619B11F92007D4E3A /* LinkedListTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedListTest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,8 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				58882DE719ACCA3F00AA66F1 /* NodeTest.swift */,
-				589A038E186771E80093B535 /* Coding_ObjectiveC_Tests.m */,
-				589A0391186776D60093B535 /* LinkedList_Tests.m */,
+				58A9AE6619B11F92007D4E3A /* LinkedListTest.swift */,
 				58A5CB2A18871D0D00113846 /* CircularLinkedList_Tests.m */,
 				589A036818676BA70093B535 /* Supporting Files */,
 			);
@@ -292,8 +292,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58A9AE6819B11FFA007D4E3A /* LinkedList.swift in Sources */,
 				58882DE919ACD04F00AA66F1 /* Node.swift in Sources */,
 				58882DE819ACCA3F00AA66F1 /* NodeTest.swift in Sources */,
+				58A9AE6719B11F92007D4E3A /* LinkedListTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
