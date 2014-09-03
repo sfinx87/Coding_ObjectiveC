@@ -1,24 +1,14 @@
 //
-//  LinkedList.swift
+//  CircularLinkedList.swift
 //  Coding_ObjectiveC
 //
-//  Created by Alexander Kobylinskyy on 8/29/14.
+//  Created by Alexander Kobylinskyy on 9/3/14.
 //  Copyright (c) 2014 Alex. All rights reserved.
 //
 
-class LinkedList<T: Equatable> : Printable {
-	var head: Node<T>? = nil
-	var tail: Node<T>? = nil
+class CircularLinkedList<T: Equatable>: LinkedList<T> {
 	
-	init(head: Node<T>) {
-		self.insertNode(head)
-	}
-	
-	func isEmpty() -> Bool {
-		return (head == nil);
-	}
-	
-	func insertNode(node: Node<T>) {
+	override func insertNode(node: Node<T>) {
 		if let headNode = head {
 			tail?.next = node
 			tail = tail?.next
@@ -27,9 +17,10 @@ class LinkedList<T: Equatable> : Printable {
 			head = node
 			tail = head
 		}
+		tail?.next = head
 	}
 	
-	func removeNode(node: Node<T>) {
+	override func removeNode(node: Node<T>) {
 		var prevNode: Node<T>? = nil
 		for var listNode: Node<T>? = head; listNode != nil; prevNode = listNode, listNode = listNode?.next {
 			if node == listNode {
@@ -37,10 +28,14 @@ class LinkedList<T: Equatable> : Printable {
 					previousNode.next = previousNode.next?.next
 				}
 				else {
-					head = head?.next
-				}
-				if (tail == listNode) {
-					tail = prevNode
+					if head == tail {
+						head = nil
+						tail = nil
+					}
+					else {
+						head = head?.next
+						tail?.next = head
+					}
 				}
 				listNode = nil
 				break
@@ -48,34 +43,34 @@ class LinkedList<T: Equatable> : Printable {
 		}
 	}
 	
-	func insertData(data: T) {
+	override func insertData(data: T) {
 		let node: Node<T> = Node(data: data)
 		self.insertNode(node)
 	}
 	
-	func removeData(data: T) {
-		let node: Node<T>? = self.findData(data)
-		if let resultNode = node {
-			self.removeNode(resultNode)
-		}
-	}
-	
-	func findData(data: T) -> Node<T>? {
+	override func findData(data: T) -> Node<T>? {
 		var result: Node<T>? = nil
 		for var node: Node<T>? = head; node != nil; node = node?.next {
 			if node?.data == data {
 				result = node
 				break
 			}
+			if node?.next == head {
+				break
+			}
 		}
 		return result;
 	}
 	
-	var description: String {
+	override var description: String {
 		var result: String = ""
-		for var node: Node<T>? = head; node != nil; node = node?.next {
-			result += "\(node)"
-		}
-		return ""
+			for var node: Node<T>? = head; node != nil; node = node?.next {
+				result += "\(node)"
+				if node?.next == head {
+					break
+				}
+			}
+			return ""
 	}
+	
 }
