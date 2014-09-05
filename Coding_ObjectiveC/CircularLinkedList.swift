@@ -8,6 +8,10 @@
 
 class CircularLinkedList<T: Equatable>: LinkedList<T> {
 	
+	override init(head: Node<T>) {
+		super.init(head: head)
+	}
+	
 	override func insertNode(node: Node<T>) {
 		if let headNode = head {
 			tail?.next = node
@@ -64,13 +68,14 @@ class CircularLinkedList<T: Equatable>: LinkedList<T> {
 	
 	override var description: String {
 		var result: String = ""
-			for var node: Node<T>? = head; node != nil; node = node?.next {
-				result += "\(node)"
-				if node?.next == head {
-					break
-				}
+		for var node: Node<T>? = head; node != nil; node = node?.next {
+			result += "\(node)"
+			result += " "
+			if node?.next == head {
+				break
 			}
-			return ""
+		}
+		return result
 	}
 	
 }

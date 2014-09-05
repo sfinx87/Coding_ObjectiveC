@@ -16,7 +16,7 @@ class Node<T: Equatable>: Printable, Equatable {
 	}
 	
 	var description: String {
-		return "Node:\(data) next:\(next)"
+		return "\(data)"
 	}
 }
 

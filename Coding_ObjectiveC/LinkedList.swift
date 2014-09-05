@@ -75,7 +75,8 @@ class LinkedList<T: Equatable> : Printable {
 		var result: String = ""
 		for var node: Node<T>? = head; node != nil; node = node?.next {
 			result += "\(node)"
+			result += " "
 		}
-		return ""
+		return result
 	}
 }
