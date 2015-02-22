@@ -410,7 +410,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "Coding_ObjectiveC Tests/SWDataStructure Tests-Info.plist";
+				INFOPLIST_FILE = "SWDataStructure Tests/SWDataStructure Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "SWDataStructure Tests";
 				SWIFT_OBJC_BRIDGING_HEADER = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Bridging-Header.h";
@@ -430,7 +430,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Coding_ObjectiveC Tests/SWDataStructure Tests-Prefix.pch";
-				INFOPLIST_FILE = "Coding_ObjectiveC Tests/SWDataStructure Tests-Info.plist";
+				INFOPLIST_FILE = "SWDataStructure Tests/SWDataStructure Tests-Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_NAME = "SWDataStructure Tests";
 				SWIFT_OBJC_BRIDGING_HEADER = "Coding_ObjectiveC Tests/Coding_ObjectiveC Tests-Bridging-Header.h";
