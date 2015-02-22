@@ -1,4 +1,4 @@
-Coding_ObjectiveC
+SWDataStructure
 =================
 
-Data structures (Swift)
+Notes about Data Structures on Swift programming language.
