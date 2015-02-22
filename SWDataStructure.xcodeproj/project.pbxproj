@@ -7,12 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		585072131A9A0FE0004D69C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 585072111A9A0FE0004D69C3 /* InfoPlist.strings */; };
 		58882DE819ACCA3F00AA66F1 /* NodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58882DE719ACCA3F00AA66F1 /* NodeTest.swift */; };
 		58882DE919ACD04F00AA66F1 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A922DF19AA6E07001161F2 /* Node.swift */; };
 		589A0345186614290093B535 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589A0344186614280093B535 /* Foundation.framework */; };
 		589A0348186614290093B535 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 589A0347186614290093B535 /* main.swift */; };
 		589A037D1867718B0093B535 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 589A036218676BA70093B535 /* XCTest.framework */; };
-		589A03831867718B0093B535 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 589A03811867718B0093B535 /* InfoPlist.strings */; };
 		58A922E019AA6E07001161F2 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A922DF19AA6E07001161F2 /* Node.swift */; };
 		58A9AE6519B11359007D4E3A /* LinkedList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A9AE6419B11359007D4E3A /* LinkedList.swift */; };
 		58A9AE6719B11F92007D4E3A /* LinkedListTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A9AE6619B11F92007D4E3A /* LinkedListTest.swift */; };
@@ -45,6 +45,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		585072121A9A0FE0004D69C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58882DE619ACCA3D00AA66F1 /* SWDataStructure Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWDataStructure Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		58882DE719ACCA3F00AA66F1 /* NodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTest.swift; sourceTree = "<group>"; };
 		589A0341186614280093B535 /* SWDataStructure */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SWDataStructure; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,7 +57,6 @@
 		589A036918676BA70093B535 /* SWDataStructure Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SWDataStructure Tests-Info.plist"; sourceTree = "<group>"; };
 		589A036F18676BA70093B535 /* SWDataStructure Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWDataStructure Tests-Prefix.pch"; sourceTree = "<group>"; };
 		589A037C1867718B0093B535 /* SWDataStructure Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SWDataStructure Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		589A03821867718B0093B535 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58A922DE19AA6E06001161F2 /* SWDataStructure-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWDataStructure-Bridging-Header.h"; sourceTree = "<group>"; };
 		58A922DF19AA6E07001161F2 /* Node.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Node.swift; sourceTree = "<group>"; };
 		58A9AE6419B11359007D4E3A /* LinkedList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkedList.swift; sourceTree = "<group>"; };
@@ -129,7 +129,6 @@
 			isa = PBXGroup;
 			children = (
 				589A034A186614290093B535 /* SWDataStructure-Prefix.pch */,
-				589A03811867718B0093B535 /* InfoPlist.strings */,
 				58A922DE19AA6E06001161F2 /* SWDataStructure-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
@@ -166,6 +165,7 @@
 		589A036818676BA70093B535 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				585072111A9A0FE0004D69C3 /* InfoPlist.strings */,
 				589A036918676BA70093B535 /* SWDataStructure Tests-Info.plist */,
 				589A036F18676BA70093B535 /* SWDataStructure Tests-Prefix.pch */,
 				58882DE619ACCA3D00AA66F1 /* SWDataStructure Tests-Bridging-Header.h */,
@@ -248,7 +248,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				589A03831867718B0093B535 /* InfoPlist.strings in Resources */,
+				585072131A9A0FE0004D69C3 /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,14 +290,13 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		589A03811867718B0093B535 /* InfoPlist.strings */ = {
+		585072111A9A0FE0004D69C3 /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				589A03821867718B0093B535 /* en */,
+				585072121A9A0FE0004D69C3 /* en */,
 			);
 			name = InfoPlist.strings;
-			path = SWDataStructure/en;
-			sourceTree = SOURCE_ROOT;
+			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
