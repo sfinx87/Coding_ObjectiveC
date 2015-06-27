@@ -48,7 +48,7 @@ class LinkedListTest: XCTestCase {
 		else {
 			XCTAssertFalse(1 == 1, "List node has not be inserted")
 		}
-		if let listTail = list.tail? {
+		if let listTail = list.tail {
 			XCTAssertEqual(node, listTail, "List tail should be correct")
 		}
 		else {

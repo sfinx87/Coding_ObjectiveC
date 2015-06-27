@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Alex. All rights reserved.
 //
 
-class Node<T: Equatable>: Printable, Equatable {
+class Node<T: Equatable>: CustomStringConvertible, Equatable {
 	var data: T!
 	var next: Node<T>? = nil
 	

@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Alex. All rights reserved.
 //
 
-class LinkedList<T: Equatable> : Printable {
+class LinkedList<T: Equatable> : CustomStringConvertible {
 	var head: Node<T>? = nil
 	var tail: Node<T>? = nil
 	
@@ -19,7 +19,7 @@ class LinkedList<T: Equatable> : Printable {
 	}
 	
 	func insertNode(node: Node<T>) {
-		if let headNode = head {
+		if let _ = head {
 			tail?.next = node
 			tail = tail?.next
 		}

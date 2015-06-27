@@ -7,12 +7,12 @@
 //
 
 let listHead = Node(data: "a")
-println("\(listHead)")
+print("\(listHead)")
 let list = LinkedList(head: listHead)
 list.insertData("b")
 list.insertData("c")
-println("List:\(list)")
+print("List:\(list)")
 let circularList = CircularLinkedList(head: listHead)
 circularList.insertData("b")
 circularList.insertData("c")
-println("Circular list:\(circularList)")
+print("Circular list:\(circularList)")

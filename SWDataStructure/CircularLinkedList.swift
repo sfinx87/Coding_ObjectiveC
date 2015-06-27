@@ -13,7 +13,7 @@ class CircularLinkedList<T: Equatable>: LinkedList<T> {
 	}
 	
 	override func insertNode(node: Node<T>) {
-		if let headNode = head {
+		if let _ = head {
 			tail?.next = node
 			tail = tail?.next
 		}
