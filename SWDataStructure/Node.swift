@@ -7,7 +7,7 @@
 //
 
 class Node<T: Equatable>: CustomStringConvertible, Equatable {
-	var data: T!
+	var data: T
 	var next: Node<T>? = nil
 	
 	init(data: T, next: Node<T>? = nil) {

@@ -102,5 +102,17 @@ class LinkedListTest: XCTestCase {
 	
 		XCTAssertNil(list.findData(50), "Non-existent data should not be found")
 	}
+	
+	func testListReverse() {
+		list.reverse()
+		XCTAssertTrue(list.head?.data == 10, "List head should be equal to 10")
+		list.insertData(20)
+		list.insertData(30)
+		list.insertData(40)
+		list.reverse()
+		XCTAssertTrue(list.head?.data == 40, "Head should be equal to 40")
+		XCTAssertTrue(list.head?.next?.data == 30, "Head next node should be equal to 30")
+		XCTAssertTrue(list.tail?.data == 10, "Tail should be equal to 10")
+	}
 
 }

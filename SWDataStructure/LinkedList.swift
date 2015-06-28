@@ -15,7 +15,7 @@ class LinkedList<T: Equatable> : CustomStringConvertible {
 	}
 	
 	func isEmpty() -> Bool {
-		return (head == nil);
+		return (head == nil)
 	}
 	
 	func insertNode(node: Node<T>) {
@@ -68,7 +68,23 @@ class LinkedList<T: Equatable> : CustomStringConvertible {
 				break
 			}
 		}
-		return result;
+		return result
+	}
+	
+	func reverse() {
+		guard head != nil else {
+			return
+		}
+		var prevNode: Node<T>? = nil
+		let prevHeadNode: Node<T>? = head
+		while let _ = head {
+			let tempNode: Node<T>? = head?.next
+			head?.next = prevNode
+			prevNode = head
+			head = tempNode
+		}
+		head = prevNode
+		tail = prevHeadNode
 	}
 	
 	var description: String {

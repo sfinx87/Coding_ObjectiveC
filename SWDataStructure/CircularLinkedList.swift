@@ -29,6 +29,9 @@ class CircularLinkedList<T: Equatable>: LinkedList<T> {
 		for var listNode: Node<T>? = head; listNode != nil; prevNode = listNode, listNode = listNode?.next {
 			if node == listNode {
 				if let previousNode = prevNode {
+					if (previousNode.next == tail) {
+						tail = previousNode
+					}
 					previousNode.next = previousNode.next?.next
 				}
 				else {
@@ -63,7 +66,10 @@ class CircularLinkedList<T: Equatable>: LinkedList<T> {
 				break
 			}
 		}
-		return result;
+		return result
+	}
+	
+	override func reverse() {
 	}
 	
 	override var description: String {
