@@ -25,16 +25,16 @@ class LinkedListTest: XCTestCase {
 	
 	func testListIsEmpty() {
 		XCTAssertNotNil(list, "List should be created")
-		XCTAssertTrue(list.isEmpty() == false, "List should not be empty")
+		XCTAssertTrue(list.isEmpty == false, "List should not be empty")
 		if let headNode = list.head {
 			list.removeNode(headNode)
-			XCTAssertTrue(list.isEmpty() == true, "List should be empty")
+			XCTAssertTrue(list.isEmpty == true, "List should be empty")
 		}
 		else {
 			XCTAssertFalse(1 == 1, "List should not be empty")
 		}
 		list.insertData(20)
-		XCTAssertTrue(list.isEmpty() == false, "List should not be empty")
+		XCTAssertTrue(list.isEmpty == false, "List should not be empty")
 	}
 	
 	func testListInsertion() {

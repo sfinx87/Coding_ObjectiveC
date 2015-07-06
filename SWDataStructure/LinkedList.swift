@@ -6,26 +6,40 @@
 //  Copyright (c) 2014 Alex. All rights reserved.
 //
 
-class LinkedList<T: Equatable> : CustomStringConvertible {
+class LinkedList<T: Equatable> : CustomStringConvertible/*, CollectionType*/ {
 	var head: Node<T>? = nil
-	var tail: Node<T>? = nil
+	var tail: Node<T>? {
+		get {
+			var node = head
+			while let _ = node?.next {
+				node = node?.next
+			}
+			return node
+		}
+	}
 	
 	init(head: Node<T>) {
 		self.insertNode(head)
 	}
 	
-	func isEmpty() -> Bool {
+	var isEmpty: Bool {
 		return (head == nil)
 	}
 	
+	var count: Int {
+		var count = 0
+		for var node: Node<T>? = head; node != nil; node = node?.next {
+			count++
+		}
+		return count
+	}
+	
 	func insertNode(node: Node<T>) {
-		if let _ = head {
-			tail?.next = node
-			tail = tail?.next
+		if let _ = self.tail {
+			self.tail?.next = node
 		}
 		else {
 			head = node
-			tail = head
 		}
 	}
 	
@@ -33,14 +47,11 @@ class LinkedList<T: Equatable> : CustomStringConvertible {
 		var prevNode: Node<T>? = nil
 		for var listNode: Node<T>? = head; listNode != nil; prevNode = listNode, listNode = listNode?.next {
 			if node == listNode {
-				if let previousNode = prevNode {
-					previousNode.next = previousNode.next?.next
-				}
-				else {
+				if (node == head) {
 					head = head?.next
 				}
-				if (tail == listNode) {
-					tail = prevNode
+				else {
+					prevNode?.next = prevNode?.next?.next
 				}
 				listNode = nil
 				break
@@ -76,7 +87,6 @@ class LinkedList<T: Equatable> : CustomStringConvertible {
 			return
 		}
 		var prevNode: Node<T>? = nil
-		let prevHeadNode: Node<T>? = head
 		while let _ = head {
 			let tempNode: Node<T>? = head?.next
 			head?.next = prevNode
@@ -84,7 +94,6 @@ class LinkedList<T: Equatable> : CustomStringConvertible {
 			head = tempNode
 		}
 		head = prevNode
-		tail = prevHeadNode
 	}
 	
 	var description: String {
