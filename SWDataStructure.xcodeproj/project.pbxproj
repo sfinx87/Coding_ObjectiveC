@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		581D11891B4B0AAD00717BA1 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D11881B4B0AAD00717BA1 /* TreeNode.swift */; };
+		581D118B1B4B0B4300717BA1 /* TreeNodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D118A1B4B0B4300717BA1 /* TreeNodeTest.swift */; };
+		581D118C1B4B0BA500717BA1 /* TreeNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 581D11881B4B0AAD00717BA1 /* TreeNode.swift */; };
 		585072131A9A0FE0004D69C3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 585072111A9A0FE0004D69C3 /* InfoPlist.strings */; };
 		58882DE819ACCA3F00AA66F1 /* NodeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58882DE719ACCA3F00AA66F1 /* NodeTest.swift */; };
 		58882DE919ACD04F00AA66F1 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A922DF19AA6E07001161F2 /* Node.swift */; };
@@ -45,6 +48,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		581D11881B4B0AAD00717BA1 /* TreeNode.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNode.swift; sourceTree = "<group>"; };
+		581D118A1B4B0B4300717BA1 /* TreeNodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TreeNodeTest.swift; sourceTree = "<group>"; };
 		585072121A9A0FE0004D69C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		58882DE619ACCA3D00AA66F1 /* SWDataStructure Tests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SWDataStructure Tests-Bridging-Header.h"; sourceTree = "<group>"; };
 		58882DE719ACCA3F00AA66F1 /* NodeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NodeTest.swift; sourceTree = "<group>"; };
@@ -140,6 +145,7 @@
 				58A922DF19AA6E07001161F2 /* Node.swift */,
 				58A9AE6419B11359007D4E3A /* LinkedList.swift */,
 				58D2E88919B7558C00A4C40C /* CircularLinkedList.swift */,
+				581D11881B4B0AAD00717BA1 /* TreeNode.swift */,
 			);
 			name = Classes;
 			sourceTree = "<group>";
@@ -155,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				58882DE719ACCA3F00AA66F1 /* NodeTest.swift */,
+				581D118A1B4B0B4300717BA1 /* TreeNodeTest.swift */,
 				58A9AE6619B11F92007D4E3A /* LinkedListTest.swift */,
 				58D2E88C19B773D400A4C40C /* CircularLinkedListTest.swift */,
 				589A036818676BA70093B535 /* Supporting Files */,
@@ -263,6 +270,7 @@
 				58A9AE6519B11359007D4E3A /* LinkedList.swift in Sources */,
 				58A922E019AA6E07001161F2 /* Node.swift in Sources */,
 				589A0348186614290093B535 /* main.swift in Sources */,
+				581D11891B4B0AAD00717BA1 /* TreeNode.swift in Sources */,
 				58D2E88A19B7558C00A4C40C /* CircularLinkedList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,11 +280,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				58A9AE6819B11FFA007D4E3A /* LinkedList.swift in Sources */,
+				581D118B1B4B0B4300717BA1 /* TreeNodeTest.swift in Sources */,
 				58882DE919ACD04F00AA66F1 /* Node.swift in Sources */,
 				58882DE819ACCA3F00AA66F1 /* NodeTest.swift in Sources */,
 				58D2E88D19B773D400A4C40C /* CircularLinkedListTest.swift in Sources */,
 				58D2E88B19B7558C00A4C40C /* CircularLinkedList.swift in Sources */,
 				58A9AE6719B11F92007D4E3A /* LinkedListTest.swift in Sources */,
+				581D118C1B4B0BA500717BA1 /* TreeNode.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
